@@ -1,0 +1,128 @@
+/* General App Layout */
+.app-container {
+  display: flex;
+  min-height: 100vh;
+  max-width: 100%;
+  font-family: Arial, sans-serif;
+  overflow: hidden; /* Prevents content from spilling out */
+}
+
+/* For any child elements that might be causing overflow */
+.app-container > * {
+  max-width: 100%;
+  overflow-x: auto; /* Allows scrolling if needed */
+}
+
+
+/* Sidebar Styling */
+.sidebar {
+  width: 250px;
+  background: #2c3e50;
+  color: white;
+  padding: 20px;
+}
+
+.sidebar .logo-container {
+  text-align: center;
+}
+
+.logo {
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 15px 0;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* Main Content */
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Dashboard */
+.dashboard {
+  margin-top: 50px;
+}
+
+/* User Management */
+.user-management {
+  max-width: 600px;
+  margin: auto;
+  text-align: left;
+}
+
+.user-form input {
+  width: 80%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.user-form button {
+  background: rgb(3, 170, 42);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.user-form button:hover {
+  background: rgb(2, 104, 20);
+}
+
+.user-form input {
+  margin-bottom: 1rem;  /* Adds space below each input */
+  display: block;  /* Makes inputs stack vertically */
+}
+
+.submit-btn {
+  margin-top: 1rem;  /* Adds space above button */
+}
+
+.user-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.user-list div {
+  text-align: left;
+}
+
+.user-list button {
+  background: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.user-list button:hover {
+  background: darkred;
+}
+
+
+/* User List */
+.user-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+
+
+
