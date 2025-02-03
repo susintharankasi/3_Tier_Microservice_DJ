@@ -49,6 +49,8 @@ REST_FRAMEWORK = {
     ],
 }
 
+OPENWEATHER_API_KEY = "c47eab2a34b487483136dfdf94db40ab"
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
